@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    background: #000;
+    font-family: sans-serif;
+}
+
+/* Header */
+
+header{
+    padding: 40px 50px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+header .logo {
+    float: left;
+    position: absolute;
+    top: 0;
+}
+header .logo img {
+    width: 100px;
+}
+header .menu {
+    float: right;
+}
+header .menu ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+header .menu ul li:last-child {
+    margin-right: 0;
+}
+header .menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all ease 0.5s;
+}
+header .menu ul li a:hover {
+    color: rgb(255, 0, 0);
+}
+
+/* Header button */
+
+header .menu ul li.btn a{
+    background: rgba(255, 0, 0, 1);
+    color: #fff;
+    padding: 14px 27px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+header .menu ul li.btn a:hover{
+    border-radius: 15px;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+/* Container */
+
+.home .container {
+    max-width: 1266px;
+    margin: 0 auto;
+}
+
+/* Studio Image */
+.home .studio-img {
+    float: right;
+    margin: 70px 10px 0;
+    position: relative;
+    border-radius: 70px 0 70px 0;
+    overflow: hidden;
+}
+.home .studio-img img {
+    filter: brightness(1.5);
+}
+.home .studio-img-overlay{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #525252;
+    z-index: 99;
+}
+
+/* Studio Texte */
+.home-text{
+    color: #fff;
+    margin-top: 220px;
+    position: absolute;
+}
+.home-text h6{
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 16px;
+}
+.home-text h1 {
+    text-transform: uppercase;
+    font-size: 100px;
+}
+.home-text p {
+    max-width: 500px;
+    font-size: 16px;
+    margin-top: 230px;
+}
+
+.home-text .name span {
+    margin-right: 15px;
+   display: inline-block;
+}
+.home-text .name span:last-child {
+    margin-right: 0;
+}
+
+/* Comportement cacher par default */
+.home .studio-img img,
+.studio span,
+.name span,
+.logo,
+.menu li,
+.small-intro span {
+    opacity: 0;
+}
