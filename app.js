@@ -61,7 +61,7 @@ $(document).ready(function(){
         targets: '.logo',
         opacity: 1,
         duration: 3000,
-        delay: 9500
+        delay:9500
     })
 
     // Menu 
@@ -69,7 +69,7 @@ $(document).ready(function(){
         targets: '.menu li',
         opacity: 1,
         duration: 3000,
-        delay: anime.stagger(150, {start:10500})
+        delay: anime.stagger(150, {start:10000})
     })
 
     // Intro 
@@ -78,6 +78,6 @@ $(document).ready(function(){
         opacity: 1,
         duration: 1000,
         eading: 'easeInSine',
-        delay: anime.stagger(50, {start: 11000})
+        delay: anime.stagger(50, {start: 10500})
     })
 })
